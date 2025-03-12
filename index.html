@@ -1,0 +1,65 @@
+
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Quiz-App</title>
+     <link rel="stylesheet" href="style.css" /> <!-- Link to external stylesheet -->
+   </head>
+   <body>
+     <!-- Main container that centers the content -->
+     <div id="main">
+       <!-- Container for all the content -->
+       <div id="container">
+         
+         <!-- Logo section -->
+         <div id="logo">
+           <img
+             src="https://files.startupranking.com/startup/thumb/7101_84fc4201db02cf8f8c30174be5f2a2f082fcaf01_testbook_l.png"
+             alt="Testbook Logo" /> <!-- Logo image -->
+           <div id="nameOfLogo">
+             <strong id="black">test</strong><strong id="blue">book</strong> <!-- Logo text with color differentiation -->
+           </div>
+         </div>
+         
+         <!-- User input section -->
+         <div id="inputArea">
+           <h1>Hello user!</h1> <!-- Greeting message -->
+           <strong>Enter your name to continue the Quiz.</strong>
+           <br />
+           <div id="inputSection">
+             <!-- Input field for user name -->
+             <input
+               type="text"
+               name="userName"
+               id="userName"
+               placeholder="ENTER YOUR NAME" /> 
+             <!-- Submit button -->
+             <button type="submit" id="submitBtn">ENTER</button>
+           </div>
+           <br />
+           <!-- Information text about the quiz -->
+           <p id="text">You'll have 10 minutes to complete the quiz.</p>
+         </div>
+         
+         <!-- Horizontal line separator -->
+         <hr />
+         
+         <!-- Categories section -->
+         <div id="categoryes">
+           <h1>Select Category</h1>
+           <br />
+           <div id="selectionBoxes">
+             <!-- Category boxes for HTML, CSS, and JavaScript -->
+             <div class="box">HTML</div>
+             <div class="box">CSS</div>
+             <div class="box">JavaScript</div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <script src="script.js"></script>
+   </body>
+ </html>
+ 
