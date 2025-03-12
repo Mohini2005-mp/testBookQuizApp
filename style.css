@@ -1,0 +1,256 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  font-family: "Gilroy", sans-serif; /* Apply a custom font */
+}
+
+html, body {
+  width: 100%;
+  height: 100%; /* Ensures the body takes up the entire height of the viewport */
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  background-color: #fdfcfcf4; /* Light background color for the page */
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* Set the container width to 50% of the viewport */
+  background-color: #fff; /* White background for the container */
+  border-radius: 5px; /* Rounded corners */
+  border: 2px solid #ddd; /* Light gray border */
+  padding: 20px; /* Padding inside the container */
+  height: auto; /* Allow container height to adjust based on content */
+  min-height: 400px; /* Ensure the container has a minimum height */
+}
+
+#container>#logo {
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+  align-items: center; /* Center the logo vertically */
+}
+
+#container>#logo>#nameOfLogo {
+  font-weight: 900; /* Bold font weight for the logo name */
+  font-size: 100px; /* Large font size for the logo */
+}
+
+#container>#logo>#nameOfLogo>#blue {
+  color: #65C9ED; /* Blue color for the "book" part of the logo */
+}
+
+#container>#inputArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack the elements vertically */
+}
+
+#container>#inputArea>h1 {
+  font-weight: 600; /* Medium font weight */
+  color: #2cafdf; /* Blue color for the heading */
+}
+
+#inputSection {
+  display: flex;
+  width: 100%;
+  justify-content: center; /* Center the elements horizontally */
+  align-items: center;
+  gap: 2%; /* Add space between the input and button */
+}
+#userName {
+  width: 60%; /* Set input width to 60% */
+  height: 1.9rem; /* Set input height */
+  padding: 1%; /* Add padding inside the input */
+  border: 2px solid #ddd; /* Light gray border */
+  border-radius: 5px; /* Rounded corners for the input */
+}
+
+#submitBtn {
+  background-color: #2cafdf; /* Blue background for the button */
+  padding: 1%; /* Padding inside the button */
+  width: 10%; /* Set button width */
+  border: none; /* Remove border */
+  border-radius: 2px; /* Slightly rounded corners for the button */
+  color: #fff; /* White text color */
+  cursor: pointer; /* Pointer cursor when hovering */
+  transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+#submitBtn:hover {
+  background-color: #1c8db3; /* Darker blue when hovered */
+}
+
+#text {
+  color: #a19696; /* Light gray color for the text */
+}
+
+hr {
+  margin: 20px; /* Add spacing around horizontal rule */
+}
+
+#categoryes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Center the categories section */
+}
+
+#categoryes>h1 {
+  color: #2cafdf; /* Blue color for category heading */
+}
+
+#selectionBoxes {
+  width: 70%; /* Set the selection boxes container width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 20px; /* Add space between selection boxes */
+  padding: 1%;
+}
+
+.box {
+  width: 40%; /* Set each category box width */
+  height: 50px; /* Set height for the category boxes */
+  display: flex;
+  justify-content: center; /* Center the text inside each box */
+  align-items: center;
+  border: 1px solid #2cafdf; /* Blue border */
+  border-radius: 3px; /* Slightly rounded corners */
+  color: #2cafdf; /* Blue text */
+  background-color: #2cafdf28; /* Light blue background with transparency */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth color transitions */
+  padding: 10px; /* Add padding inside the boxes */
+}
+
+.box:hover {
+  background-color: #2cafdf; /* Change background to solid blue on hover */
+  color: #fff; /* Change text color to white on hover */
+}
+#resultSection{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#result>h1{
+  color: #1c8db3;
+ 
+}
+#selection{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+#selection>button{
+  border: 2px solid #1c8db3;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: #1c8db3;
+  color: #fbfdfd;
+}
+#selection>button:hover{
+  background-color: #2cafdf;
+}
+/* Media Query for Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  #container {
+    width: 90%; /* Increase container width for small screens */
+    padding: 15px; /* Reduce padding for small screens */
+  }
+
+  #container>#logo>#nameOfLogo {
+    font-size: 60px; /* Smaller font size for the logo on small screens */
+  }
+
+  #userName {
+    width: 80%; /* Make input field wider on small screens */
+  }
+
+  #submitBtn {
+    width: 30%; /* Make the button smaller on small screens */
+  }
+
+  #selectionBoxes {
+    width: 100%; /* Take up full width on small screens */
+    flex-direction: column; /* Stack selection boxes vertically */
+    gap: 15px; /* Reduce gap between boxes */
+  }
+
+  .box {
+    width: 80%; /* Adjust width of each category box */
+  }
+}
+
+/* Media Query for Extra Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  #container>#logo>#nameOfLogo {
+    font-size: 40px; /* Even smaller font size for very small screens */
+  }
+
+  #userName {
+    width: 90%; /* Make input field wider on extra small screens */
+  }
+
+  #submitBtn {
+    width: 50%; /* Make the button wider on extra small screens */
+  }
+
+  .box {
+    width: 90%; /* Adjust category boxes width */
+  }
+}
+
+/* Media Query for Very Small Screens (max-width: 320px) */
+@media (max-width: 320px) {
+  #container>#logo {
+    flex-direction: column; /* Stack logo elements vertically on very small screens */
+  }
+}
+#quizHadding{
+  text-align: center;
+  font-size: 20px;
+}
+#Timer_scoreboard{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+#Timer{
+ width: 50px;
+ height: 50px;
+ border: 2px solid #65C9ED;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ border-radius: 50%;
+}
+#questionSection{
+  border-radius: 5px;
+  border: 2px solid rgba(230, 170, 170, 0.349);
+  padding: 20px;
+}
+#options{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Add space between selection boxes */
+  padding: 1%;
+}
